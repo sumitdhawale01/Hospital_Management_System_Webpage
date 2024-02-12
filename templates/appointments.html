@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>appointment</title>
+     <link href="font-family: 'Baloo Bhai 2', cursive;">
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+<main>
+    <section id="appointments">
+                <h2>Schedule and Track Appointments</h2>
+                <div id="appointment-form">
+                    <h3>Schedule an Appointment</h3>
+                    <form method="post" action="/appointments">
+                        <label for="Doctor-name">Doctor Name:</label>
+                        <input type="text" id="patient" name="Patient_Name" required>
+                        <label for="appointment-date">Appointment Date:</label>
+                        <input type="date" id="appointment-date" name="DateOfAppointment" required>
+                        <label for="appointment-time">Appointment Time:</label>
+                        <input type="time" id="appointment-time" name="TimeOfAppointment" required>
+                        <button type="submit">Schedule</button>
+                    </form>
+                </div>
+                <div id="appointment-list">
+                    <!-- Appointment list will be displayed here -->
+                </div>
+            </section>
+</main>
+        <script src="script.js"></script>
+
+
+</body>
+</html>
